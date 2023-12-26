@@ -17,7 +17,10 @@ export default function Page() {
         }
     }
 
-    window.addEventListener('scroll', revealSearch)
+    if(typeof window !== 'undefined') {
+        // Your client-side code that uses window goes here
+        window.addEventListener('scroll', revealSearch)
+    }
 
     return (
         <div className={s.main}>
