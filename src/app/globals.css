@@ -1,5 +1,12 @@
 :root {
-  --max-width: 1100px;
+  --black: #1A1A1A;
+  --white: #FDFDFD;
+  --brand: #9684f8;
+  --brand-dark: #6046f3;
+
+  --white-1: #F1F1F1;
+  --white-2: #EDEDED;
+  /* --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -103,5 +110,41 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
+  } */
+}
+
+::selection {
+  color: var(--black);
+  background-color: var(--brand);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-space-grotesk);
+}
+
+body {
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--black))
+    )
+     rgb(var(--black)); */
+     background-color: var(--black);
+}
+
+a {
+  color: var(--brand)
+}
+
+button, label, input, form {
+  font-family: var(--font-space-grotesk);
 }
