@@ -31,17 +31,19 @@ export default function Page() {
     }
 
     useEffect(() => {
-        if (window.innerWidth >= 768) {
-            setFontSize(1.125)
-            setLineHeight(160)
-        }
-        else if (window.innerWidth >= 1200) {
-            setFontSize(1.25)
-            setLineHeight(165)
-        }
-        else {
-            setFontSize(1)
-            setLineHeight(150)
+        if (typeof window !== 'undefined') {
+            if (window.innerWidth >= 768) {
+                setFontSize(1.125)
+                setLineHeight(160)
+            }
+            else if (window.innerWidth >= 1200) {
+                setFontSize(1.25)
+                setLineHeight(165)
+            }
+            else {
+                setFontSize(1)
+                setLineHeight(150)
+            }
         }
     },[window.innerWidth])
 
