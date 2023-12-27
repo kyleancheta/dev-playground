@@ -18,18 +18,20 @@ export default function Page() {
     // }
 
     useEffect(() => {
-        const revealSearch = () => {
-            if (window.scrollY >= 240) {
-                setShowSearch(true)
-            } else {
-                setShowSearch(false)
+        if (typeof window !== 'undefined') {
+            const revealSearch = () => {
+                if (window.scrollY >= 240) {
+                    setShowSearch(true)
+                } else {
+                    setShowSearch(false)
+                }
             }
-        }
-        
-        window.addEventListener('scroll', revealSearch)
-
-        return () => {
-            window.removeEventListener('scroll')
+            
+            window.addEventListener('scroll', revealSearch)
+    
+            return () => {
+                window.removeEventListener('scroll')
+            }
         }
     }, [])
 
