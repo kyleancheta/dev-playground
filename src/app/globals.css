@@ -4,8 +4,19 @@
   --brand: #9684f8;
   --brand-dark: #6046f3;
 
+  --black-1: #2A2A2A;
+  --black-2: #3A3A3A;
   --white-1: #F1F1F1;
   --white-2: #EDEDED;
+  --grey-1: #CDCDCD;
+  --grey-2: #BDBDBD;
+  --grey-3: #ADADAD;
+  --grey-4: #9D9D9D;
+  --grey-5: #8D8D8D;
+  --grey-6: #7D7D7D;
+  --grey-7: #6D6D6D;
+  --grey-8: #5D5D5D;
+  --grey-9: #4D4D4D;
   /* --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',

@@ -1,0 +1,79 @@
+button.main {
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--white);
+    color: var(--black);
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid var(--grey-2); */
+}
+
+button.main:hover {
+    background-color: color-mix(in srgb, var(--white) 90%, var(--black));
+}
+
+/* button.main:focus {
+    border: 2px dashed rgb(71, 71, 182);
+    background-color: color-mix(in srgb, var(--white) 80%, var(--black));
+} */
+
+button.main:active {
+    background-color: color-mix(in srgb, var(--white) 70%, var(--black));
+}
+
+button.main > * {
+    width: 16px;
+    height: 16px;
+}
+
+.plus::after {
+    box-sizing: border-box;
+    content: "+";
+    font-size: 20px;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: -4px;
+    right: 3px;
+}
+
+.minus::after {
+    box-sizing: border-box;
+    content: "-";
+    font-size: 20px;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: -4px;
+    right: 3px;
+}
+
+@media screen and (min-width: 568px) {
+
+    .plus::after {
+        top: 0px;
+        right: 6px;
+    }
+    
+    .minus::after {
+        top: 0px;
+        right: 6px;
+    }
+
+    button.main {
+        width: 64px;
+        height: 64px;
+    }
+
+    button.main > * {
+        width: 24px;
+        height: 24px;
+    }
+}

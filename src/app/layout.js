@@ -1,4 +1,4 @@
-import { Space_Grotesk } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 
 const space_grotesk = Space_Grotesk({
@@ -6,6 +6,12 @@ const space_grotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
   display: 'swap',
 })
+
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--font-inter',
+//   display: 'swap',
+// })
 
 // const cssReset = {
 
@@ -19,7 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${space_grotesk.variable}`}>
-      <body className={space_grotesk.className}>
+      {/* <body className={space_grotesk.className}> */}
+      <body>
         {children}
       </body>
     </html>
