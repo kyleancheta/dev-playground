@@ -9,18 +9,34 @@ import HomeButton from '@/_components/HomeButton'
 export default function Page() {
 
     const [showSearch, setShowSearch] = useState(false)
-    const revealSearch = () => {
-        if (window.scrollY >= 240) {
-            setShowSearch(true)
-        } else {
-            setShowSearch(false)
-        }
-    }
+    // const revealSearch = () => {
+    //     if (window.scrollY >= 240) {
+    //         setShowSearch(true)
+    //     } else {
+    //         setShowSearch(false)
+    //     }
+    // }
 
-    if(typeof window !== 'undefined') {
-    // Your client-side code that uses window goes here
+    useEffect(() => {
+        const revealSearch = () => {
+            if (window.scrollY >= 240) {
+                setShowSearch(true)
+            } else {
+                setShowSearch(false)
+            }
+        }
+        
         window.addEventListener('scroll', revealSearch)
-    }
+
+        return () => {
+            window.removeEventListener('scroll')
+        }
+    }, [])
+
+    // if(typeof window !== 'undefined') {
+    // // Your client-side code that uses window goes here
+    //     window.addEventListener('scroll', revealSearch)
+    // }
 
     return (
         <div className={s.main}>
