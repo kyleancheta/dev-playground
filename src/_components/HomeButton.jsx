@@ -8,7 +8,7 @@ import styles from './HomeButton.module.css'
 export default function HomeButton({ top }) {
   const router = useRouter()
   return (
-    <button className={`${styles.main} ${top ? styles.top : null}`} onClick={() => router.push('/', { scroll: boolean })}>
+    <button className={`${styles.main} ${top ? styles.top : null}`} onClick={() => router.push('/', { scroll: true })}>
         <MdHome className={styles.icon}/>
     </button>
   )
