@@ -1,6 +1,5 @@
 .main {
     z-index: 100;
-    cursor: pointer;
     position: fixed;
     bottom: 24px;
     left: 24px;
@@ -10,6 +9,9 @@
     outline: none;
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(32,32,32,0.5);

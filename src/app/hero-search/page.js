@@ -30,7 +30,7 @@ export default function Page() {
             window.addEventListener('scroll', revealSearch)
     
             return () => {
-                window.removeEventListener('scroll')
+                window.removeEventListener('scroll', revealSearch)
             }
         }
     }, [])
