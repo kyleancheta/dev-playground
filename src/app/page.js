@@ -9,7 +9,9 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.titleSection}>
         <h1 className={styles.title}>dev playground</h1>
-        <h3 className={styles.subtitle}>a place to fuck around and find out, by <a href="https:///www.kyleancheta.com" target="_blank">kyle</a>.</h3>
+        <h3 className={styles.subtitle}>
+          my little sandbox on the internet to fuck around and find out; trying my best to be a design engineer. made by me, <a href="https:///www.kyleancheta.com" target="_blank">kyle</a>.
+        </h3>
       </section>
       <ul className={styles.list}>
         {/* <li className={styles.item}><Link href="/test">test</Link></li>
