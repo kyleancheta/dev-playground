@@ -2,13 +2,13 @@
     z-index: 100;
     position: fixed;
     bottom: 24px;
-    left: 24px;
+    right: 24px;
 
     background-color: var(--white);
     border: none;
     outline: none;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     color: var(--black);
 }

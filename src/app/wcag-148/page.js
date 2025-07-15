@@ -101,7 +101,7 @@ export default function Page() {
                 This provision does not mean that a user would never need to use horizontal scrolling. It only means that they would not need to use horizontal scrolling back and forth to read a line of text. For example, if a page consisted of two equal sized columns of text, it would automatically meet this provision. Enlarging the page would mean that the first column was completely on screen and the user could just scroll vertically down the page to read it. To read the second column, they would horizontally scroll to the right, where the right hand column would then fit entirely within the width of the screen, and read that column without further horizontal scrolling.
                 </p>
             </section>
-            <HomeButton top/>
+            <HomeButton/>
         </main>
     )
 }
