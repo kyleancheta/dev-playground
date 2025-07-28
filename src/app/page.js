@@ -10,7 +10,7 @@ export default function Home() {
       <section className={styles.titleSection}>
         <h1 className={styles.title}>dev playground</h1>
         <h3 className={styles.subtitle}>
-          my little sandbox on the internet to fuck around and find out; trying my best to be a design engineer. made by me, <a href="https:///www.kyleancheta.com" target="_blank">kyle</a>.
+          my little sandbox on the internet to fuck around and find out; trying my best to be a design engineer—it's hard out here. made by me, <a href="https:///www.kyleancheta.com" target="_blank">kyle</a>.
         </h3>
       </section>
       <ul className={styles.list}>
