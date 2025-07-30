@@ -1,0 +1,88 @@
+/* * {
+    --dark: #2C2C2C;
+    --bg: #444444;
+} */
+
+.container {
+    background-color: #444444;
+    padding: 3px;
+    border-radius: 5px;
+    max-height: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 32px);
+    grid-template-rows: 32px;
+    gap: 3px;
+    transition: all 0.3s;
+}
+
+.button {       
+    max-width: 32px;
+    max-height: 32px;
+
+    box-sizing: border-box; 
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.150s;
+
+    z-index: 10;
+}
+
+.button:not(.selected, .drawSelected, .designSelected, .codeSelected):hover {
+    cursor: pointer;
+    background-color: rgba(0, 0 , 0, 0.2);
+}
+
+.draw {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.design {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.code {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.selected {
+    /* box-sizing: border-box;  */
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 2; */
+    z-index: 1;
+
+    width: 32px;
+    height: 32px;
+    background-color: #2C2C2C;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.25), 0 1.5px 1px rgba(22, 22, 22, 0.15), 0 0 0.5px rgba(8, 8, 8, 0.5);
+    transition: all 0.5s;
+}
+
+.icon > path {
+    fill: #BFBFBF;
+}
+
+.drawSelected > svg > path {
+    fill: #6CCBE3;
+}
+
+.designSelected > svg > path {
+    fill: #7FC5F6;
+}
+
+.codeSelected > svg > path {
+    fill: #6BDC9E;
+}
+
+/* .selected > .icon > path {
+     fill: #7FC5F6;
+} */

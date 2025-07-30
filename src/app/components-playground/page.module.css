@@ -1,0 +1,43 @@
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white-2);
+}
+
+.sectionContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    grid-auto-flow: row;
+}
+
+.gridItem {
+    box-sizing: border-box;
+    height: calc(100vh / 3);
+    background-color: var(--white);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.heading {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.description {
+    color: var(--grey-8);
+    text-align: center;
+}
+
+.body {
+    color: var(--grey-8);
+    text-align: center;
+}
