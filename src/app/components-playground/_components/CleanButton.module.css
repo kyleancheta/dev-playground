@@ -1,0 +1,58 @@
+.main {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    color: var(--white-1);
+    background-color: var(--brand-dark);
+    border-radius: 7px;
+    border: 1px solid rgba(42,42,42,0.15);
+    outline: none;
+    padding: 7px 13px;
+
+    font-family: Inter, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+
+    transition: all 0.150s;
+}
+
+/* .main::after {
+    content: "";
+    position: absolute;
+    inset: 20px;
+    transform: (-20px, -20px);
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 44px;
+} */
+
+.main:hover {
+    cursor: pointer;
+    background-color: hsl(from var(--brand-dark) h calc(s - 18) calc(l - 8));
+}
+
+.main:focus-visible {
+    background-color: hsl(from var(--brand-dark) h calc(s - 18) calc(l - 8));
+}
+
+.main:focus-visible::after {
+    content: "";
+    position: absolute;
+    inset: 50%;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    outline: solid 2px var(--brand-dark);
+    border-radius: 11px;
+    display: block;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+}
+
+.main:active {
+    scale: 0.97;
+}

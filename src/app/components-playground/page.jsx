@@ -1,6 +1,7 @@
 // import Link from 'next/link'
 import HomeButton from '@/_components/HomeButton'
 import TriSwitch from './_components/TriSwitch'
+import CleanButton from './_components/CleanButton'
 import TriSwitch2 from './_components/TriSwitch2'
 import styles from './page.module.css'
 
@@ -15,8 +16,10 @@ export default function ComponentsPlayground() {
             </div>
           <div className={`${styles.gridItem}`}></div>
           <div className={`${styles.gridItem}`}>
-            <TriSwitch/>
-            <p className={styles.body}>My first crack at the Figma toolbar state switcher.</p>
+            <CleanButton>Blast off</CleanButton>
+            <p className={styles.body}>Just a simple button with its states styled appropriately and a l'il active animation.</p>
+            {/* <TriSwitch/>
+            <p className={styles.body}>My first crack at the Figma toolbar state switcher.</p> */}
           </div>
           <div className={`${styles.gridItem}`}>
             <TriSwitch2/>
