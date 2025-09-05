@@ -19,6 +19,7 @@ export default function Home() {
         <li className={styles.item}><Link href="/hero-search-v2">hero search v2</Link></li> */}
         <li className={styles.item}><Link href="/wcag-148">WCAG: 1.4.8.</Link></li>
         <li className={styles.item}><Link href="/components-playground">Components Playground</Link></li>
+        {/* <li className={styles.item}><Link href="/video-chat">Video Chat</Link></li> */}
       </ul>
     </main>
   )
